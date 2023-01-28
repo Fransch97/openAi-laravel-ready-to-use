@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $gpt = app('gpt');
-    $test = $gpt->askGpt("Who is elon musk?");
+    $test = $gpt->ask("Who is elon musk?");
     $string = json_decode($test)->choices[0]->text;
     return $string;
 });
