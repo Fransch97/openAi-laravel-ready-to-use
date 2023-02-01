@@ -1,13 +1,13 @@
 <?php
 
-namespace App\Features\Gpt;
+namespace App\Classes\Gpt;
 
 use Orhanerday\OpenAi\OpenAi;
 
 class ClientGpt
 {
     private OpenAi $gpt;
-    private string $message;
+    private string|null $message;
 
     public function __construct(
         private readonly string $token,

@@ -2,7 +2,7 @@
 
 namespace App\Providers;
 
-use App\Features\Gpt\ClientGpt;
+use App\Classes\Gpt\ClientGpt;
 use Illuminate\Support\ServiceProvider;
 
 class GptServiceProvider extends ServiceProvider
